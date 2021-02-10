@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  master:
+    volumes:
+      - ./build/resources/${DUMMY_REPO_PATH}:/mnt/locust
+  
+  worker:
+    volumes:
+      - ./build/resources/${DUMMY_REPO_PATH}:/mnt/locust
