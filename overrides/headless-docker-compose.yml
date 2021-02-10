@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  master:
+    command: -f /mnt/locust/locustfile.py --headless -u ${USERS} -r ${SPAWN_RATE} --run-time ${RUN_TIME} --expect-workers=${WORKERS} --master -H http://master:${MASTER_CONTAINER_PORT}
+  
+  worker:
+    command: -f /mnt/locust/locustfile.py --worker --master-host master
