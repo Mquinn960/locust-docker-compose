@@ -39,3 +39,9 @@ with ```3``` worker nodes ready to send requests.
 
 The locust files used within this demo are controlled via the
 Locust Files Repo: https://github.com/Mquinn960/locust-files
+
+## Disclaimer
+
+This setup is not intended for production usage, and care
+should be exercised in order to not execute inadvertant
+DDOS attacks on unwitting hosts.
