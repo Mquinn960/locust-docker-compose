@@ -38,4 +38,4 @@ with ```3``` worker nodes ready to send requests.
 ## Locust Files
 
 The locust files used within this demo are controlled via the
-(Locust Files Repo)[https://github.com/Mquinn960/locust-files]
+Locust Files Repo: https://github.com/Mquinn960/locust-files
