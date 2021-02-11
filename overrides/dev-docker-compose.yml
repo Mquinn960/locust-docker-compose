@@ -3,8 +3,12 @@ version: '3'
 services:
   master:
     volumes:
-      - ./build/resources/${DUMMY_REPO_PATH}:/mnt/locust
+      - ./build/locust/resources/${FOOBAR_REPO_PATH}:/mnt/locust
   
   worker:
     volumes:
-      - ./build/resources/${DUMMY_REPO_PATH}:/mnt/locust
+      - ./build/locust/resources/${FOOBAR_REPO_PATH}:/mnt/locust
+
+  mock-server:
+    volumes:
+      - ./build/mockserver/resources:/config 

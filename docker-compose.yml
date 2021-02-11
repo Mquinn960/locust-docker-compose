@@ -11,14 +11,10 @@ services:
     image: locust-test/mqlocust
     command: -f /mnt/locust/locustfile.py --worker --master-host master
 
-  mockServer:
+  mock-server:
     image: mock-test/mqmock
     ports:
       - 1080:1080
     environment:
       MOCKSERVER_PROPERTY_FILE: /config/mockserver.properties
       MOCKSERVER_INITIALIZATION_JSON_PATH: /config/initializerJson.json
-    volumes:
-      - type: bind
-        source: /build/mockserver/resources
-        target: /config
