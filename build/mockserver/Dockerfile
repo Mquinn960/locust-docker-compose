@@ -1,0 +1,1 @@
+FROM mockserver/mockserver as mqmock

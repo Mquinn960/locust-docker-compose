@@ -1,0 +1,27 @@
+[
+    {
+        "httpRequest": {
+            "method": "GET",
+            "path": "/api/v1/foo",
+            "queryStringParameters": {
+                "query": [
+                    "foobar"
+                ]
+            }
+        },
+        "httpResponse": {
+            "body": "{\"response: bar\"}",
+            "statusCode": 200
+        }
+    },
+    {
+        "httpRequest": {
+            "method": "GET",
+            "path": "/api/v1/bar"
+        },
+        "httpResponse": {
+            "body": "{\"response: foo\"}",
+            "statusCode": 200
+        }
+    }
+]
