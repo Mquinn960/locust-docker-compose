@@ -5,7 +5,7 @@ services:
     image: locust-test/mqlocust
     ports:
      - "${MASTER_HOST_PORT}:${MASTER_CONTAINER_PORT}"
-    command: -f /mnt/locust/locustfile.py --master -H http://master:${MASTER_CONTAINER_PORT}
+    command: -f /mnt/locust/locustfile.py --master -H http://mock-server:1080
   
   worker:
     image: locust-test/mqlocust
